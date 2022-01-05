@@ -1,6 +1,5 @@
 # Vekil üzerinden güvenli bağlantı
 
-[TOC]
 
 
 
@@ -23,32 +22,51 @@ Atölyemizde, resimlendireceğim sistemin çekirdeğini yönlendirme ve şifrele
 ##### 2.1.1. SSH sunucusu
 
 ​	Önerilen: [xshellz](https://www.xshellz.com)
+
 ​		:heavy_check_mark: SSH ve port yönlendirme
+
 ​		:heavy_check_mark: Ücretsiz hizmet planı
+
 ​		:heavy_check_mark: Hızlı üyelik
+
 ​		:x: Şeffaf gizlilik ilkesi (burada sadece deneme amaçlı kullanacağız)
+
 Detay: [Üyelik](https://www.xshellz.com/signup) / [Yönetim paneli](https://www.xshellz.com/xpanel/create) / [Kullanım şartları](https://www.xshellz.com/terms-of-service) / [Hizmet planları](https://www.xshellz.com/pricing)
 
 ##### 2.1.2. SSH alıcısı
 
 ​	Önerilen: OpenSSH
+
 ​		:heavy_check_mark: Port yönledirme ve güvenli tünel oluşturma
+
 ​		:heavy_check_mark: Taşınabilir, ücretsiz ve açık kaynaklı
+
 ​		:heavy_check_mark: Komut satırı
+
 ​		:heavy_check_mark: Yüksek uyarlama kapasitesi
+
 ​		:heavy_check_mark: İz bırakmadan kaldırılabilir
+
 ​	Detay: [Kullanım kılavuzu](https://www.openssh.com/manual.html)
+
 ​	İndir: [v8.6.0.0 (x86)](https://github.com/PowerShell/Win32-OpenSSH/releases/download/V8.6.0.0p1-Beta/OpenSSH-Win32.zip) / [v8.6.0.0 (x64)](https://github.com/PowerShell/Win32-OpenSSH/releases/download/V8.6.0.0p1-Beta/OpenSSH-Win64.zip)
 
 ##### 2.1.3. Web tarayıcısı
 
 ​	Önerilen: Mozilla Firefox Portable
+
 ​		:heavy_check_mark: Güvenli tünel kullanma kabiliyeti
+
 ​		:heavy_check_mark: Taşınabilir, ücretsiz ve açık kaynaklı
+
 ​		:heavy_check_mark: Komut satırı
+
 ​		:heavy_check_mark: Yüksek uyarlama kapasitesi
+
 ​		:heavy_check_mark: İz bırakmadan kaldırılabilir
+
 ​	Detay: [Kullanım kılavuzu](https://support.mozilla.org/tr/products/firefox)
+
 ​	İndir: [v95.0.2 (x86/x64)](https://sourceforge.net/projects/portableapps/files/Mozilla%20Firefox%2C%20Portable%20Ed./Mozilla%20Firefox%2C%20Portable%20Edition%2095.0.2/FirefoxPortable_95.0.2_Turkish.paf.exe/download)
 
 #### 2.2. Önbakış
@@ -195,10 +213,15 @@ FireFox Portable uygulamasını çalıştırıyoruz, konum çubuğuna `about:con
 ##### B) Vekil yöneticisi
 
 ​	Önerilen: FoxyProxy
+
 ​		:heavy_check_mark: Taşınabilir, ücretsiz ve açık kaynaklı
+
 ​		:heavy_check_mark: Yüksek uyarlama kapasitesi
+
 ​		:heavy_check_mark: Birden çok ağ ayarı desteği
+
 ​	Detay: [Hakkında](https://addons.mozilla.org/tr/firefox/addon/foxyproxy-standard/)
+
 ​	İndir: [v7.5.1](https://addons.mozilla.org/firefox/downloads/file/3616824/foxyproxy_standard-7.5.1-an+fx.xpi)
 
 Üsteki indir bağlantısını kopyalıyoruz, FireFox Portable'nin adres çubuğuna yapıştırıp onaylıyoruz ve FoxyProxy eklentisinin kurulmasını sağlıyoruz.
@@ -224,10 +247,15 @@ Böylece FoxyProxy eklentisiyle <span style="color:blue">SSH Oturumu</span> isim
 #### 4.2. Gömülü reklamların engellenmesi
 
 ​	Önerilen: Adblock Plus
+
 ​		:heavy_check_mark: Taşınabilir, ücretsiz ve açık kaynaklı
+
 ​		:heavy_check_mark: Yüksek uyarlama kapasitesi
+
 ​		:heavy_check_mark: Geniş kapsamlı listeler (abonelikler)
+
 ​	Detay: [Hakkında](https://addons.mozilla.org/tr/firefox/addon/adblock-plus/)
+
 ​	İndir: [v3.11.4](https://addons.mozilla.org/firefox/downloads/file/3872123/adblock_plus-3.11.4-an+fx.xpi)
 
 Üsteki indir bağlantısını kopyalıyoruz, FireFox Portable'nin adres çubuğuna yapıştırıp onaylıyoruz ve Adblock Plus eklentisinin kurulmasını sağlıyoruz.
@@ -246,12 +274,19 @@ Böylece FoxyProxy eklentisiyle <span style="color:blue">SSH Oturumu</span> isim
 #### 5.1. SSH alıcısı (alternatif)
 
 ​	Önerilen: PuTTY
+
 ​		:heavy_check_mark: Port yönledirme ve güvenli tünel oluşturma
+
 ​		:heavy_check_mark: Taşınabilir, ücretsiz ve açık kaynaklı
+
 ​		:heavy_check_mark: Komut satırı
+
 ​		:heavy_check_mark: Yüksek uyarlama kapasitesi
+
 ​		:x: İz bırakmadan kaldırılabilir
+
 ​	Detay: [Kullanım kılavuzu](https://documentation.help/PuTTY/)
+
 ​	İndir: [v0.76 (x86)](https://the.earth.li/~sgtatham/putty/latest/w32/putty.zip) / [v0.76 (x64)](https://the.earth.li/~sgtatham/putty/latest/w64/putty.zip)
 
 PuTTY, arayüz üzerinden yapılan ayarları işletim sisteminin veritabanına kaydetmektedir (`HKEY_CURRENT_USER\Software\SimonTatham`). Taşınabilirlik ve veri güvenliğimiz için alıcımızı arayüz kullanmadan toplu işlem dosyası üzerinden çalıştırıp, verileri parametreler halinde bildirebiliriz. Sıradaki iki komut satırını kopyalayıp, PuTTY'nin bulunduğu klasörde oluşturacağımız toplu işlem dosyasına yapıştırıyoruz (örn. C:\Putty\oturum.bat). Sunucumuzun tam ismini veya IP adresini <span style="color:red">sunucu</span>, kullanıcı adımızı da <span style="color:red">kullanıcı</span> şeklinde belirtilen yerlerle değiştirmeyi unutmuyoruz.
@@ -276,12 +311,19 @@ putty.exe -ssh -2 -P 22 -D 7561 sunucu -l kullanıcı
 #### 5.2. Kaynak
 
 [Shells](https://shells.red-pill.eu/)
+
 [Proxy Firefox through a SSH tunnel](https://calomel.org/firefox_ssh_proxy.html)
+
 [Firefox: Useragent](http://kb.mozillazine.org/General.useragent.locale)
+
 [Firefox: Remote DNS](http://kb.mozillazine.org/Network.proxy.socks_remote_dns)
+
 [SOCKS5: DNS lookups](https://bugzilla.mozilla.org/show_bug.cgi?id=134105)
+
 [PuTTY User Manual](http://the.earth.li/~sgtatham/putty/0.63/htmldoc/index.html)
+
 [GNU Genel Kamu Lisansı (GPL) Nedir?](https://www.tech-worm.com/gnu-genel-kamu-lisansi-gpl-nedir/)
+
 
 #### 5.3. Yasal uyarı
 
@@ -290,4 +332,5 @@ Yazılarımı imkanlarım dahilinde titizlikle oluşturuyorum ve bilgi ve tecrü
 Çalışmalarımın tüm içerikleri, metin, grafik, logo ve yazılım kodları; dış görünüm ve teknik unsurlar, sayfanın toplama, düzenleme ve içerik derlemenin tamamı, her türlü haklar dahil olmak üzere bana aittir ve GPLv3 şartları altında yayınlanmaktadır. Bu unsurları kısmen veya tamamen, doğrudan veya dolaylı olarak aynen veya değiştirilmiş şekliyle kullanımı, alıntılanması, iktibası, çoğaltılması, işlenmesi, depolanması, başka bilgisayara yüklenmesi, dağıtımı, nakli, tekrar yayınlanması, teşhiri, uyarlanması, temsili, kişisel veya ticari amaçla elde bulundurulması, satılması veya yukarıda sayılan fiilerin teşvik edilmesi, yapılmasının kolaylaştırılması haklarımı koruyarak mümkündür.
 
 [GNU Genel Kamu Lisansı](http://www.gnu.org/licenses/gpl-3.0.tr.html)
+
 [GNU General Public License v3.0](https://choosealicense.com/licenses/gpl-3.0/)
