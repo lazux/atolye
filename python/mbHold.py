@@ -28,11 +28,11 @@ while True:
             for event in events:
                 if isinstance(event, mouse._mouse_event.ButtonEvent):
                     pressed = False if (event.event_type == 'up') else True
-                if (time() - stime) < 1:
-                    if singlepress:
-                        print('tiklama')
-                        singlepress = False
-                else:
-                    print('basili\ntutma')
+                    if (time() - stime) < 1:
+                        if singlepress:
+                            print('tiklama')
+                            singlepress = False
+                    else:
+                        print('basili\ntutma')
     events.clear()
     sleep(0.01)
