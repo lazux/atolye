@@ -23,6 +23,7 @@ while True:
     pressed = init()
     if pressed:
         singlepress = True
+        singleholdpress = True
         stime = time()
         while pressed:
             for event in events:
@@ -30,9 +31,11 @@ while True:
                     pressed = False if (event.event_type == 'up') else True
                     if (time() - stime) < 1:
                         if singlepress:
-                            print('tiklama')
+                            print('left click')
                             singlepress = False
                     else:
-                        print('basili\ntutma')
+                        if singleholdpress:
+                            print('left hold')
+                            singleholdpress = False
     events.clear()
     sleep(0.01)
